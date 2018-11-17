@@ -81,4 +81,19 @@
 #        transistors on IC for that year.
 
   echo "If during $yp , transistors on IC were $tic," 
-  echo "  then during $yp , number of transistors will be $ticInYf " 
+  echo "  then during $yf , number of transistors will be $ticInYf " 
+
+
+# or using while loop , double tic every two years, from yp to yf
+
+  ticInYf=$tic    #initialize 
+
+  while [ $yp -lt $yf ]        # from yp to yf
+    do 
+        ticInYf=` expr $ticInYf + $ticInYf `  # or  $ticInYf \* 2
+                                              # doubles
+        yp=` expr $yp + 2 `    # increment yp by two instead of 1  
+                               # that is every two years  
+    done
+
+  echo "During $yf , number of transistors will be $ticInYf " 
