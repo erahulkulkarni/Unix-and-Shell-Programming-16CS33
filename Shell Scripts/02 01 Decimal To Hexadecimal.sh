@@ -14,8 +14,8 @@
   read num
 
 #      Its shell script, use $ to get value of variable , 
-#      use calculator bc , to find base 16 representation of entered bsae 10 number
-#      And enclose in backquote ` ` to imply its commands and not just string
+#      use calculator bc , to find base 16 representation of entered base 10 number
+#      And enclose in backquote ` ` to imply its command and not just a string
 
   hexNum=` echo "obase=16; $num" | bc `
 
