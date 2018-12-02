@@ -20,3 +20,25 @@
   hexNum=` echo "obase=16; $num" | bc `
 
   echo "$num in base 10 = $hexNum in base 16"
+
+# OR 
+# using while loop
+
+  temp=$num  # save a copy of number
+  hexNum=""  # initialize hexadecimal to empty string
+  while [ $temp -ne 0 ] #while number not 0, divide by 16, remainder is digit in 
+    do # number's hexadecimal representation, append remainder to a hex number  
+      remainder=` expr $temp % 16 `  # get last digit in remainder
+      temp=` expr $temp / 16 `       # then exclude last digit from number
+      case $remainder in   # append digit to known hex number so far
+          [0-9]) hexNum=`echo "$remainder$hexNum"`;; 
+             10) hexNum=`echo "A$hexNum"`;;
+             11) hexNum=`echo "B$hexNum"`;;
+             12) hexNum=`echo "C$hexNum"`;;
+             13) hexNum=`echo "D$hexNum"`;;
+             14) hexNum=`echo "E$hexNum"`;;
+             15) hexNum=`echo "F$hexNum"`;;                                
+      esac
+    done
+
+  echo "$num in base 10 = $hexNum in base 16"
