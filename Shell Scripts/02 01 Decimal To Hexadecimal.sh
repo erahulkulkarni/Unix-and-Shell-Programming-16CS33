@@ -1,6 +1,6 @@
 #!/bin/sh
 #Question: 
-# Write a shell script to to accept a integer from the terminal and convert to
+# Write a shell script to accept a integer from the terminal and convert to
 #   hexadecimal number. Number 255 in decimal = FF in hexadecimal, that is convert
 #   a base 10 number to base 16. In base 10 digits are from 0 to 9. In base 16 
 #   digits are from 0 to 9 and then followed by A(which represents 10), B(is 11) 

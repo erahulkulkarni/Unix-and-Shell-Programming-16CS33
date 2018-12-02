@@ -1,6 +1,6 @@
 #!/bin/sh
 #Question: 
-# Write a shell script to to accept a integer from the terminal and convert to
+# Write a shell script to accept a integer from the terminal and convert to
 #   binary number. Number 5 in decimal = 101 in binary(Convert base 10 to base 2).
 
 # Always write assumptions made, either as comment or as description

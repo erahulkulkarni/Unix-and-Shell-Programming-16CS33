@@ -1,6 +1,6 @@
 #!/bin/sh
 #Question: 
-# Write a shell script to to accept a integer from the terminal and check if its a 
+# Write a shell script to accept a integer from the terminal and check if its a 
 #    palindrome. A number is palindrome if the reverse of the number turns out to 
 #    be the same number. 12321, whose reverse is 12321, which is the original 
 #    number, is a palindrome. Number 12345 is not a palindrom as its reverse is

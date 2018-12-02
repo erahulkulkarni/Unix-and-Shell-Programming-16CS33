@@ -1,6 +1,6 @@
 #!/bin/sh
 #Question: 
-# Write a shell program to to accept a integer from the terminal and check if its a
+# Write a shell program to accept a integer from the terminal and check if its a
 #     prime number. A number is prime if it is only divisible by 1 and itself.
 
 # Always write assumptions made, either as comment or as description

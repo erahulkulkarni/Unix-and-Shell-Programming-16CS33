@@ -1,6 +1,6 @@
 #!/bin/sh
 #Question: 
-# Write a shell script to to accept a integer from the terminal and convert to
+# Write a shell script to accept a integer from the terminal and convert to
 #   octal number. Number 21 in decimal = 25 in octal(Convert base 10 to base 8).
 
 # Always write assumptions made, either as comment or as description
