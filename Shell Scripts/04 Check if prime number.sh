@@ -15,7 +15,7 @@
 
   divisor=2 
   squareRootOfNumber=` echo "sqrt( $num )" | bc `
-  #   Orion Pax, Bob Budiansky, Dennis O'Neil
+
   while [ $divisor -le $squareRootOfNumber ] # while divisor is less than or equal 
     do  # to square root of number
       remainder=` expr $num % $divisor `
